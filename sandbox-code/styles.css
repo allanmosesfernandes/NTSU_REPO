@@ -1,0 +1,90 @@
+/* Popular Links redesign 2022 */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+
+
+body {
+    font-family: 'Barlow', sans-serif;
+
+}
+.popular--links__container {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 2rem;
+    background-color: #F2F0FF;
+    padding: 30px;
+}
+
+.popular--links__block {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background: linear-gradient(220.55deg, #4643DF 0%, #0B0A47 100%);
+    color: white;
+    padding: 30px;
+    border-radius: 15px;
+    justify-content: space-between;
+    border: 3px solid #0B0A47
+}
+
+.popular--links__block:hover {
+    background: white;
+    border: 3px solid #29235c;
+    transition: all 0.2s ease-in;
+    color: #29235c;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.popular--links__block--icon {
+    width: 56px;
+    height: 56px;
+    position: absolute;
+    top: -30px;
+    border-radius: 50%;
+    background: white;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .popular--links__block--icon:hover {
+    transform: rotate(360deg);
+} */
+
+.popular--links__block--link {
+    text-decoration: underline;
+}
+
+
+.popular--links__block--icon .fa-solid, .fa-suitcase {
+    color: #29235c;
+}
+
+
+
+/* Media Queries */
+@media only screen and (max-width: 600px) {
+    .popular--links__container {
+        grid-template-columns: repeat(auto-fill,minmax(160px,1fr));
+        grid-auto-flow: column;
+        grid-auto-columns: 160px;
+        overflow-x: scroll;
+        gap: 30px;
+    }
+
+    .popular--links__block {
+        padding: 15px 10px;
+        height: 200px;
+    }
+    .popular--links__block h2 {
+        font-size: 1rem;
+    }
+    .popular--links__block p {
+        font-size: 0.8rem;
+    }
+  }

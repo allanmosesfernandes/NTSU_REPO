@@ -916,7 +916,7 @@ li.dashboard-icon:before {
     background-size: 100% !important;
     padding: 0 0 30px 0;
     margin: 0 0 0 15px;
-    filter: grayscale(1);                                                                                                                                                                                                                                                                                                                                                                                                                  bac
+                                                                                                                                                                                                                                                                                                                                                                                                                bac
 }
 .nav-wrap li a {
     font-family: var(--secular) !important;
