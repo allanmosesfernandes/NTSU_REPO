@@ -4813,3 +4813,126 @@ color: var(--unionpurple);
         width: 85%;
     }
   }
+
+/* Popular Links Redesign 2022 */
+.popular--links__container {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 2rem;
+    background-color: #F2F0FF;
+    padding: 30px;
+}
+
+.popular--links__block {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background: linear-gradient(220.55deg, #4643DF 0%, #0B0A47 100%);
+    color: white;
+    padding: 30px;
+    border-radius: 15px;
+    justify-content: space-between;
+    border: 3px solid #0B0A47
+}
+
+.popular--links__block:hover {
+    background: white;
+    border: 3px solid #29235c;
+    transition: all 0.2s ease-in;
+    color: #29235c;
+}
+
+.popular--links__title,
+.popular--links__subtitle,
+.popular--links__block--link {
+    color: #fff;
+}
+/* 
+.popular--links__block:hover .popular--links__title, .popular--links__subtitle, .popular--links__block--link 
+{
+    color: #29235C;
+} */
+
+.popular--links__block a {
+    border-bottom: none;
+}
+
+.popular--links__block--icon {
+    width: 56px;
+    height: 56px;
+    position: absolute;
+    top: -30px;
+    border-radius: 50%;
+    background: white;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #29235C;
+}
+
+a.popular--links__block--link {
+    text-decoration: underline;
+    font-family: var(--secular);
+}
+
+
+.popular--links__block--icon .fa-solid, .fa-suitcase {
+    color: #29235c;
+}
+
+.popular--links__block:hover .popular--links__title {
+    color: #29235C;
+}
+
+.popular--links__block:hover .popular--links__subtitle {
+    color: #29235C;
+}
+.popular--links__block:hover .popular--links__block--link {
+    color: #29235C;
+}
+.popular--links__block > .popular--links__title {
+    color: #fff;
+}
+/* Media Queries */
+@media only screen and (max-width: 600px) {
+    .popular--links__container {
+        grid-auto-flow: column;
+        overflow-x: scroll;
+        gap: 30px;
+        padding-bottom: 80px;
+
+    }
+
+    .popular--links__block {
+        padding: 30px 15px 10px;
+        height: 200px;
+        min-width: 196px;
+    }
+
+    .popular--links__block h2 {
+        font-size: 1rem;
+    }
+
+    .popular--links__title {
+        font-size: 1rem;
+    }
+    .popular--links__subtitle {
+        font-size: 0.9rem !important;
+        padding-top: 1rem;
+    }
+
+    .popular--links__container::after {
+        border: 1px solid;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        padding: 10px;
+        position: absolute;
+        bottom: 0;
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        content: "\f061";
+        text-align: center;
+    }
+    }
+
