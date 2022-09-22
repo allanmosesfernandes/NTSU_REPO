@@ -1,0 +1,9 @@
+.page-not-found-container {
+  background-image: url('./assets/404.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}

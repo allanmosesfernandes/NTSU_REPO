@@ -14,8 +14,7 @@ body {
 .popular--links__container {
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    gap: 2rem;
-    background-color: #F2F0FF;
+    gap: 3rem;
     padding: 30px;
 }
 
@@ -28,20 +27,22 @@ body {
     padding: 30px;
     border-radius: 15px;
     justify-content: space-between;
-    border: 3px solid #0B0A47
+    transition: all 0.3S ease-in;
+    z-index: 999;
 }
 
-.popular--links__block:hover {
+/* .popular--links__block:hover {
     background: white;
-    border: 3px solid #29235c;
     transition: all 0.2s ease-in;
     color: #29235c;
-}
+} */
 
 .popular--links__title,
 .popular--links__subtitle,
 .popular--links__block--link {
     color: #fff;
+    font-family: var(--secular);
+
 }
 
 .popular--links__block a {
@@ -73,19 +74,23 @@ body {
 .popular--links__block > .popular--links__title {
     color: #fff;
 }
+.popular--links__subtitle {
+    padding-top: 1rem;
+}
 /* Media Queries */
 @media only screen and (max-width: 600px) {
     .popular--links__container {
-        grid-template-columns: repeat(auto-fill,minmax(160px,1fr));
+        grid-template-columns: repeat(auto-fill,minmax(196px,1fr));
         grid-auto-flow: column;
-        grid-auto-columns: 160px;
+        grid-auto-columns: 196px;
         overflow-x: scroll;
         gap: 30px;
+        padding: 30px 0;
     }
 
     .popular--links__block {
         padding: 30px 15px 10px;
-        height: 200px;
+        height: 230px;
     }
     .popular--links__block h2 {
         font-size: 1rem;
@@ -94,4 +99,41 @@ body {
     .popular--links__title {
         font-size: 1rem;
     }
+
+    .popular--links__block--icon {
+        border: 1px solid;
+    }
   }
+
+
+  
+.popular--links__block:nth-child(1) {
+    background: #82368C;
+}
+.popular--links__block:nth-child(2) {
+    background: #E40521;
+}
+.popular--links__block:nth-child(3) {
+    background: #F39125;
+}
+.popular--links__block:nth-child(4) {
+    background: #119E9F;
+}
+.popular--links__block:nth-child(5) {
+    background: #29235c;
+}
+.popular--links__block:nth-child(6) {
+    background: lightslategray;
+}
+.popular--links__block:nth-child(7) {
+    background: #95C11F;
+}
+.popular--links__block:nth-child(8) {
+    background: #F39125;
+}
+
+.popular--links__block:hover .popular--links__block--icon{
+    transform: scale(1.1);
+}
+
+

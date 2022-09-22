@@ -4882,6 +4882,11 @@ color: var(--unionpurple);
 .popular--links__subtitle {
     padding-top: 1rem;
 }
+
+a.popular--links__block--link {
+  border-bottom: 3px solid;
+  width: fit-content;
+}
 /* Media Queries */
 @media only screen and (max-width: 600px) {
     .popular--links__container {
@@ -4890,9 +4895,13 @@ color: var(--unionpurple);
         grid-auto-columns: 196px;
         overflow-x: scroll;
         gap: 30px;
-        padding: 30px 0;
+        padding: 40px 0;
+        padding-bottom: 3.5rem;
     }
 
+    .popular--links__subtitle {
+      font-size: 0.9rem !important;
+    }
     .popular--links__block {
         padding: 30px 15px 10px;
         height: 230px;
@@ -4907,6 +4916,20 @@ color: var(--unionpurple);
 
     .popular--links__block--icon {
         border: 1px solid;
+    }
+
+    .popular--links__container::after {
+      border: 1px solid;
+      border-radius: 50%;
+      width: 20px;
+      height: 20px;
+      padding: 10px;
+      position: absolute;
+      bottom: 0;
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      content: "\f061";
+      text-align: center;
     }
   }
 
