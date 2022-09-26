@@ -4748,8 +4748,9 @@ input#site_search_id {
 }
 
 .search.page-search {
-    width: 80%;
-    border-bottom: 2px solid #29235c;
+    width: 90%;
+    border: 2px solid #29235c;
+    border-radius: 30px;
 }
 
 /* 

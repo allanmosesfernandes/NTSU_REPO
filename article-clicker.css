@@ -4748,8 +4748,9 @@ input#site_search_id {
 }
 
 .search.page-search {
-    width: 80%;
-    border-bottom: 2px solid #29235c;
+    width: 90%;
+    border: 2px solid #29235c;
+    border-radius: 30px;
 }
 
 /* 
@@ -4933,8 +4934,6 @@ a.popular--links__block--link {
     }
   }
 
-
-  
 .popular--links__block:nth-child(1) {
     background: #82368C;
 }
@@ -4959,7 +4958,13 @@ a.popular--links__block--link {
 .popular--links__block:nth-child(8) {
     background: #F39125;
 }
-
 .popular--links__block:hover .popular--links__block--icon{
     transform: scale(1.1);
+}
+/* Events Clicking issue fix */
+.uc-page-wrap {
+  z-index: 10;
+}
+.uc-widget-articles-list li {
+  z-index: 20;
 }
