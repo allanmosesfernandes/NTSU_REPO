@@ -108,4 +108,3 @@ document.getElementById("site_search_id").placeholder = "I'm looking for...";
 
 document.getElementById("search_keyword").placeholder = "Search...";
 
-const let a == b;

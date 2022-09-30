@@ -343,6 +343,9 @@ blockquote {
    .widget-title > .latest-news-header {
        font-size: 1.2rem !important;
    }
+
+   /* Articles Mobile reducing full width */
+
 }
 /* --- Universal button --- */
 .choosePlan, .sign-up .buttonrow input, .confirmation-email .buttonrow input, .unlock .buttonrow input, .change-password .buttonrow input, input.button, .uc-sv-comment-saveButton, .highlight-button, .myaccount-change-password .actions .action input, .signin-block .ask-button .highlight-button, .actions .action .update, .actions .action .button.create, #uc-resource-details .uc-download-file-button {
@@ -1224,11 +1227,14 @@ li.dashboard-icon:before {
         grid-template-columns: 150px 1fr;
         padding: 0 15px;
    }
+   .meet-the-team {
+    margin: 50px 0;
+}
 }
 @media only screen and (max-width: 480px) {
     .uc-widget-articles-container ul.uc-widget-articles-list {
         grid-template-columns: 1fr;
-        padding: 0 0 20px 0;
+        padding: 0 20px;
    }
     .uc-widget-articles-container ul.uc-widget-articles-list li .article-thumbnail>a img, .widget-four.uc-without-og.uc-widget-articles-container ul.uc-widget-articles-list li .article-thumbnail a {
         width: 100%;
@@ -1472,7 +1478,9 @@ img.img-circle {
         padding: 20px 0 0 0;
    }
     .widget-title-container {
-        grid-template-columns: 170px 1fr;
+      display: flex;
+      justify-content: space-between;
+      padding: 0 20px;
    }
 }
 /* --- Stripe Styles --- */
@@ -4968,3 +4976,4 @@ a.popular--links__block--link {
 .uc-widget-articles-list li {
   z-index: 20;
 }
+

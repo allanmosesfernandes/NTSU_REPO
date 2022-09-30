@@ -9,6 +9,22 @@
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
+    <div class="banner">
+        <div class="banner__content">
+            <div class="banner__text">
+                <strong>If you're a student having difficulty logging into our website, email     
+                    <a style="color: #fff" href="mailto:support@ntu.ac.uk?subject=Difficulty logging into the SU website!&amp;body=hi, I can't log into the NTSU website (trentstudents.org). Please send my student record to be uploaded to the SU website so I can log in">support@ntu.ac.uk</a>
+                and ask for your student record to be uploaded to the SU website.</strong>
+            </div>
+
+            <div class="banner">
+                <div class="banner__content">
+                <div class="banner__text"><strong>If you're a student having difficulty logging into our website, email <a href="mailto:support@ntu.ac.uk?subject=Difficulty logging into the SU website!&amp;body=hi, I can't log into the NTSU website (trentstudents.org). Please send my student record to be uploaded to the SU website so I can log in" style="color: #fff">support@ntu.ac.uk</a></strong> and ask for your student record to be uploaded to the SU website. <button class="banner__close" type="button"><i class="fa-solid fa-xmark"></i></button></div>
+                </div>
+            </div>
+            <button class="banner__close" type="button">x</button>
+        </div>
+    </div>
     <div class="popular--links__container">
         <div class="popular--links__block">
             <a href="/opportunities/societies">
@@ -19,7 +35,7 @@
                
                 <p class="popular--links__subtitle">Find out communities and groups you can be a part of </p>
     
-                <a href="/opportunities/societies" class="popular--links__block--link">Learn More</a>
+                <a href="/opportunities/societies" class="link link--metis">Learn More</a>
             </a>
         </div>
         <div class="popular--links__block">
@@ -106,7 +122,19 @@
                 <a href="/eatdrinkshop" class="popular--links__block--link">Learn More</a>
             </a>
         </div>
+
     </div>
-    <script></script>
+    <button class="popular--links__container--arrow">Swipe</button>
+
+    <script>
+        const rightBtn = document.querySelector('.popular--links__container--arrow');
+        const popular__links = document.querySelector('.popular--links__container');
+        rightBtn.addEventListener('click', () => {
+            popular__links.scrollBy({
+                left: 200,
+                behavior: 'smooth'
+            });
+        })
+    </script>
 </body>
 </html>

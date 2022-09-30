@@ -1,0 +1,39 @@
+
+.student__login--container::after {
+  content: 'login using your NTU student email';
+  color: #29235c;
+  position: absolute;
+  font-weight: bold;
+  top: 106px;
+  left: 170px;
+}
+
+.student__login--container {
+  position: relative;
+}
+.student__login--container::after {
+  content: 'login using your NTU student email*';
+  bottom: -50px;
+  position: absolute;
+  width: 260px;
+  left: -50px;
+  color: #29235c;
+  font-weight: bold;
+}
+
+#separation_text::after {
+  content: 'Staff/ Guest login';
+}
+
+.form-field.row-size::after {
+  content: 'login using your NTU staff or guest account*';
+  color: #29235c;
+  font-weight: bold;
+}
+/* Ocean RUles
+><a class="btn-2018" href="/resources/ocean-ticket-process-21-22/download_attachment" onclick="window.open(this.href,  null, 'height=750, width=800, toolbar=0, location=0, status=0, scrollbars=1, resizable=1'); return false;">Full rules here</a></p>
+
+
+
+
+*/
